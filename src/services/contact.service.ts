@@ -36,7 +36,7 @@ export class ContactService{
         });
 
         const teachers = contact_teachers.map((teacher) => ({
-            id: teacher.id,
+            id: teacher.teacher?.id,
             name: teacher.teacher?.name || null,
           }));
 
